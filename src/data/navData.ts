@@ -5,7 +5,7 @@ type NavDataType = {
 
 export const navData: NavDataType[] = [
   {
-    name: "About",
+    name: "Sobre",
     path: "/about/",
   },
   {
