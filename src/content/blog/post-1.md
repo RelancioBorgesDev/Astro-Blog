@@ -1,13 +1,19 @@
 ---
-layout: "../../layouts/BlogPostLayout.astro"
-title: Understanding How JavaScript Works
+title: "Understanding How JavaScript Works"
 date: 2024-03-19
-author: Relancio Borges
-image: { src: "/images/post-1.jpg", alt: "A picture of a coder" }
-description: Have you ever wondered what the most important items of life are? Well, wonder no more!
-draft: false
-category: Reference Docs
+author: "Relancio Borges"
+image: "./images/post-1.jpg"
+description: "Have you ever wondered what the most important items of life are? Well, wonder no more!"
+category: "Reference Docs"
 ---
+
+
+
+JavaScript is a versatile and powerful programming language that is widely used for creating interactive websites and web applications. In this article, we'll explore the fundamentals of how JavaScript works under the hood.
+
+## Introduction to JavaScript
+
+// Remaining content...
 
 # Understanding How JavaScript Works
 

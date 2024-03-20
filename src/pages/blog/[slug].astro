@@ -1,0 +1,50 @@
+---
+import type { GetStaticPaths } from "astro";
+import { CollectionEntry, getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro"
+import { Image } from "astro:assets";
+
+export const getStaticPaths = async () => {
+    const blogPosts = await getCollection("blog")
+    const paths = blogPosts.map((blogPost) => {
+        return {
+            params: {
+                slug: blogPost.slug
+            },
+            props: {
+                blogPost
+            }
+        }
+    })
+    return paths
+}
+
+type Props = {
+    blogPost: CollectionEntry<"blog">
+}
+
+const {blogPost} = Astro.props
+const {Content} = await blogPost.render()
+
+---
+
+<MainLayout title="Welcome">
+    <main class="w-full flex flex-col items-center justify-center gap-8 py-8 relative">
+      <a href="/blog">
+        <button class="absolute top-4 left-4 bg-black text-white font-semibold py-2 px-4 rounded">Voltar</button>
+      </a>
+      <h1 class="text-5xl font-bold">{blogPost.data.title}</h1>
+      <Image
+        src={blogPost.data.image}
+        alt={"image"}
+        width={1024}
+        height={1024/2}
+        format="webp"
+        class="rounded-2xl shadow-xl mb-28 object-cover"
+      />
+      <div class="prose prose-xl overflow-visible relative mb-4">
+        <Content/>
+      </div>
+    </main>
+    
+</MainLayout>

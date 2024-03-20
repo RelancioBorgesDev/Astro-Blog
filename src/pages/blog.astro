@@ -8,10 +8,10 @@ const blogPosts = await getCollection("blog")
 ---
 
 <MainLayout title="Meu Blog">
-    <main class="flex flex-col items-center gap-8">
-        <header class="w-full bg-zinc-950 text-white flex flex-col items-center gap-8 p-4">
+    <main class="flex flex-col items-center gap-8" transition:animate="fade">
+        <header class="w-full bg-zinc-950 text-white flex flex-col items-center gap-8 px-4 py-8 text-center justify-center">
             <h1 class="text-5xl font-bold">Meus principais posts</h1>
-            <div class="flex gap-8">
+            <div class="flex flex-wrap text-center justify-center gap-8">
                 <BlogTag tagName="Javascript"/>
                 <BlogTag tagName="Typescript"/>
                 <BlogTag tagName="Java"/>

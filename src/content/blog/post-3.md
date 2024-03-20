@@ -1,16 +1,20 @@
 ---
-
-title: Beginning with CSS
-date: 2022-12-03
-author: Relancio Borges
-image: {
-  src: "/images/post-3.jpg",
-  alt: "A picture of a coder",
-}
-description: CSS is a great way to style your website. In fact, there are no alternatives! Learn how to use it here.
-draft: false
-category: CSS
+title: "Understanding How JavaScript Works"
+date: 2024-03-19
+author: "Relancio Borges"
+image: "./images/post-1.jpg"
+description: "Have you ever wondered what the most important items of life are? Well, wonder no more!"
+category: "Reference Docs"
 ---
+
+# Understanding How JavaScript Works
+
+JavaScript is a versatile and powerful programming language that is widely used for creating interactive websites and web applications. In this article, we'll explore the fundamentals of how JavaScript works under the hood.
+
+## Introduction to JavaScript
+
+// Remaining content...
+
 
 Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
 

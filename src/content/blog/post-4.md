@@ -2,9 +2,8 @@
 title: Why is this CSS so weird?
 date: 2022-12-09
 author: Relancio Borges
-image: { src: "/images/post-4.jpg", alt: "A picture of a coder" }
+image: "./images/post-4.jpg"
 description: The global css file for this site is a bit different than I’d write things normally.
-draft: false
 category: CSS
 ---
 
