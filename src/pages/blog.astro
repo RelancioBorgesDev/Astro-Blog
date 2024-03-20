@@ -1,0 +1,26 @@
+---
+import PostList from "../components/PostList.astro"
+import MainLayout from "../layouts/MainLayout.astro"
+import BlogTag from "../components/BlogTag.astro"
+import {getCollection} from "astro:content"
+
+const blogPosts = await getCollection("blog")
+---
+
+<MainLayout title="Meu Blog">
+    <main class="flex flex-col items-center gap-8">
+        <header class="w-full bg-zinc-950 text-white flex flex-col items-center gap-8 p-4">
+            <h1 class="text-5xl font-bold">Meus principais posts</h1>
+            <div class="flex gap-8">
+                <BlogTag tagName="Javascript"/>
+                <BlogTag tagName="Typescript"/>
+                <BlogTag tagName="Java"/>
+                <BlogTag tagName="Python"/>
+                <BlogTag tagName="C#"/>
+               
+            </div>
+        </header>
+        <PostList blogPosts={blogPosts}/>
+    </main>
+
+</MainLayout>

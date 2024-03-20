@@ -1,7 +1,8 @@
 ---
+layout: "../../layouts/BlogPostLayout.astro"
 title: Understanding How JavaScript Works
 date: 2024-03-19
-author: Your Name
+author: Relancio Borges
 image: { src: "/images/post-1.jpg", alt: "A picture of a coder" }
 description: Have you ever wondered what the most important items of life are? Well, wonder no more!
 draft: false

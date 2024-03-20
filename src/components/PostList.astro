@@ -1,0 +1,17 @@
+---
+import type {CollectionEntry} from "astro:content"
+import BlogPost from "./BlogPost.astro"
+
+type Props = {
+    blogPosts: CollectionEntry<'blog'>[]
+}
+
+const {blogPosts} = Astro.props
+
+---
+
+<div class="w-full flex flex-wrap gap-4 ">
+    {blogPosts.map((blogPost) => (
+        <BlogPost blogPost={blogPost}/>
+    ))}
+</div>

@@ -1,0 +1,35 @@
+---
+import {Image} from "astro:assets"
+import {formatDate} from "../utils/formatDate"
+import {getEntryBySlug, type CollectionEntry} from "astro:content"
+
+type Props = {
+    blogPost: CollectionEntry<'blog'>
+}
+
+const { blogPost } = Astro.props
+
+const formattedDate = formatDate(blogPost.data.date)
+
+---
+
+<article class="w-full flex gap-4 hover:bg-zinc-700/5 p-2 rounded-xl">
+    <a href={`/blog/${blogPost.slug}`}>
+        <Image
+            src={blogPost.data.image.src}
+            alt={blogPost.data.image.alt}
+            width={600}
+            height={600 / 1.5}
+            class={"rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"}
+            format="webp"
+        />
+    </a>
+    <a href={`/blog/${blogPost.slug}`} class="text-zinc-900 flex flex-col gap-4">
+        <h2 class="text-4xl font-bold">{blogPost.data.title}</h2>
+        <p class="text-zinc-500 text-lg line-clamp-2">{blogPost.data.description}</p>
+        <div class="w-full flex items-center justify-between">
+            <span class="text-md">{blogPost.data.author}</span>
+            <span class="">{formattedDate}</span>
+        </div>
+    </a>
+</article>
