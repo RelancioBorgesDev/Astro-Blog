@@ -8,12 +8,13 @@ const {title, description} = Astro.props as LayoutProps
 import Footer from "../components/Footer.astro"
 import Nav from "../components/Nav.tsx";
 import { ViewTransitions } from 'astro:transitions';
+import logo from "../assets/logo.svg"
 ---
 
 <html lang="pt-BR">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={logo.src} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta title={title}  />

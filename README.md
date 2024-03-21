@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" style="margin-bottom: 10px;">
 
 ![Project Logo](./src/assets/logo.png)
 ![Project Blog IMage](./src/assets/blog.png)
