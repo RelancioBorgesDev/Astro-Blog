@@ -6,7 +6,7 @@ interface LayoutProps  {
 const {title, description} = Astro.props as LayoutProps
 
 import Footer from "../components/Footer.astro"
-import Nav from "../components/Nav.astro";
+import Nav from "../components/Nav.tsx";
 import { ViewTransitions } from 'astro:transitions';
 ---
 
@@ -24,7 +24,7 @@ import { ViewTransitions } from 'astro:transitions';
 	</head>
 	<body>
 		<div class="flex flex-col justify-between h-screen">
-			<Nav/>
+			<Nav client:load/>
 			<slot/>
 			<Footer/>
 		</div>
