@@ -5,15 +5,15 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="Home" description="Home page">
     <main class="w-full h-screen bg-slate-100 flex flex-col items-center" >
-        <section class="w-[1200px] h-[calc(100vh-148px)] flex items-center justify-center p-4 ">
+        <section class="w-[1200px] h-[calc(100vh-148px)] flex items-center justify-center p-4 max-[1200px]:flex-col max-[1200px]:w-full max-[1200px]:text-center max-[1200px]:gap-8">
            
             <picture class="w-full flex items-center justify-center" transition:name="user-logo">
                 <img src={"https://github.com/RelancioBorgesDev.png"} class="w-80 h-80 rounded-full" alt={"My Picture"}/>
             </picture>
      
-            <div class="flex flex-col gap-4">
-                <h1 class="text-7xl">Meu blog</h1>
-                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id cum, in tempora aspernatur eligendi illo qui, atque cupiditate at tenetur facere, aperiam dolor eveniet eos architecto porro corrupti debitis deserunt.</p>
+            <div class="w-full flex flex-col gap-4 max-[1200px]:items-center max-[1200px]:px-40 max-lg:px-20 max-md:px-12">
+                <h1 class="text-7xl max-sm:text-4xl">Meu blog</h1>
+                <p class="text-justify max-sm:text-md">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id cum, in tempora aspernatur eligendi illo qui, atque cupiditate at tenetur facere, aperiam dolor eveniet eos architecto porro corrupti debitis deserunt.</p>
                 <div>
                     <a href="/blog">
                         <button class="rounded bg-black text-white font-bold px-2   flex items-center justify-center w-fit group py-3">
