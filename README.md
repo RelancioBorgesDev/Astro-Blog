@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" style="margin-bottom: 10px;">
 
 ![Project Logo](./src/assets/logo.png)
 ![Project Blog IMage](./src/assets/blog.png)
@@ -8,13 +8,9 @@
 <div align="center" style="display: flex; gap: 10px; align-items:center; justify-content: center; margin-top:50px;">
 
 ![astro-badge](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE)
-
 ![typescript-badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-
 ![react-badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-
 ![tailwind-badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
 ![framer-badge](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 
 </div>
