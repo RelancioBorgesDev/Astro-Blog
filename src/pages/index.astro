@@ -10,13 +10,16 @@ import MainLayout from "../layouts/MainLayout.astro";
             <picture class="w-full flex items-center justify-center" transition:name="user-logo">
                 <img src={"https://github.com/RelancioBorgesDev.png"} class="w-80 h-80 rounded-full" alt={"My Picture"}/>
             </picture>
+     
             <div class="flex flex-col gap-4">
                 <h1 class="text-7xl">Meu blog</h1>
                 <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id cum, in tempora aspernatur eligendi illo qui, atque cupiditate at tenetur facere, aperiam dolor eveniet eos architecto porro corrupti debitis deserunt.</p>
                 <div>
-                    <button class="rounded bg-black text-white font-bold px-2   flex items-center justify-center w-fit group py-3">
-                        Principais Posts
-                    </button>
+                    <a href="/blog">
+                        <button class="rounded bg-black text-white font-bold px-2   flex items-center justify-center w-fit group py-3">
+                            Principais Posts
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>

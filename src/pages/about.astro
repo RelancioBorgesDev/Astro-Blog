@@ -1,12 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro"
+import ContactLinks from "../components/ContactLinks.tsx"
+
 ---
 
 <MainLayout title="About" description="Home page">
-    <section class="w-full h-screen bg-slate-100 flex flex-col items-center relative gap-8" >
+    <section class="w-full h-screen bg-slate-100 flex flex-col items-center relative gap-8 py-4" >
          <picture class="w-full flex items-center justify-center" transition:name="user-logo">
                 <img src={"https://github.com/RelancioBorgesDev.png"} class="w-80 h-80 rounded-full" alt={"My Picture"}/>
             </picture>
+            <ContactLinks/>
             <div class="w-[900px] max-lg:w-full max-lg:px-8 flex flex-col items-center  gap-8">
                 <article class="flex flex-col gap-2">
                     <h1 class="text-4xl font-bold">Quem sou eu</h1>
@@ -22,6 +25,6 @@ import MainLayout from "../layouts/MainLayout.astro"
                 </article>
             </div>
 
-            <button class="rounded bg-black text-white font-bold px-2   flex items-center justify-center w-fit group py-3 absolute right-4 bottom-4 max-md:relative">Entre em contato</button>
+  
     </section>
 </MainLayout>

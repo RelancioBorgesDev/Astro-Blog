@@ -1,6 +1,5 @@
 ---
-import type { GetStaticPaths } from "astro";
-import { CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro"
 import { Image } from "astro:assets";
 
@@ -29,7 +28,7 @@ const {Content} = await blogPost.render()
 ---
 
 <MainLayout title="Welcome">
-    <main class="w-full flex flex-col items-center justify-center gap-8 py-8 relative">
+    <main class="w-full flex flex-col items-center justify-center gap-8 py-8 relative px-2">
       <a href="/blog">
         <button class="absolute top-4 left-4 bg-black text-white font-semibold py-2 px-4 rounded">Voltar</button>
       </a>
@@ -40,7 +39,7 @@ const {Content} = await blogPost.render()
         width={1024}
         height={1024/2}
         format="webp"
-        class="rounded-2xl shadow-xl mb-28 object-cover"
+        class="rounded-2xl shadow-xl mb-4 object-cover"
       />
       <div class="prose prose-xl overflow-visible relative mb-4">
         <Content/>
