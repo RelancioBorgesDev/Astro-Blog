@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logomark.svg";
+import logo from "../assets/logo.svg";
 import { navData } from "../data/navData";
 import { motion } from "framer-motion";
 const navMotion = {
@@ -27,17 +27,15 @@ export default function Nav() {
   const navLinks = navData;
   const [toggled, setToggled] = useState(false);
 
-  console.log(toggled);
-
   return (
     <nav className="border-2 p-3 flex bg-white">
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center gap-4">
           <a href="/">
-            <img src={logo.src} width={60} height={60} className="bg-red-500" />
+            <img src={logo.src} width={60} height={60} />
           </a>
 
-          <div className="w-px h-12 bg-black bg-opacity-20 mx-4"></div>
+          <div className="w-px h-12 bg-black bg-opacity-20 mx-4 max-lg:hidden"></div>
 
           <ul className="flex gap-4 max-lg:hidden">
             {navLinks.map(({ name, path }, index) => (
